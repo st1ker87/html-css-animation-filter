@@ -68,7 +68,6 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 @keyframes roll {
   0%   {transform: rotate(0deg);}
   25%  {transform: rotate(90deg);}
@@ -78,13 +77,26 @@
 }
 
 .ex-11-icon {
-  transition: transform 2s;
-  tran
-  transition-timing-function: ;
+  position: relative;
+  animation-name: ruot;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  animation-fill-mode: backwards;
 }
 .ex-11-icon:hover {
-  transform: rotate(270deg);
+  animation-play-state: running;
+
 }
+@keyframes ruot {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(0deg)}
+}
+
+
 
 .ex-12-top-white,
 .ex-12-bottom-white {
