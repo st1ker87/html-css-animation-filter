@@ -1,26 +1,30 @@
-
-
-.ex-1-square:hover {
-  background: red;
+.ex-1-square {
   transition: all 3s;
 }
-
-.ex-2-square:active {
-  width: 100%;
-  transition: all 5s;
+.ex-1-square:hover {
+  background: red;
 }
 
+.ex-2-square {
+  transition: all 5s;
+}
+.ex-2-square:active {
+  width: 100%;
+}
+
+.ex-3-square {
+  transition: all 2s;
+}
 .ex-3-square:hover {
   border-radius: 50%;
-  transition: all 2s;
 }
 
 .ex-4-square {
-  animation: svapo 3s;
+  transition: 2s;
 }
-@keyframes svapo {
-  0% {height: 100px; width: 100px;}
-  100% {height: 0;width: 0;}
+
+.ex-4-square:hover {
+  background-color: transparent;
 }
 
 .ex-5-square {
@@ -98,10 +102,11 @@
 
 
 
-.ex-12-top-white,
+.ex-12-top-white {
+  transition: left 1s;
+}
 .ex-12-bottom-white {
-  transition: left 0.3s;
-  transition: right 0.3s;
+  transition: right 1s;
 }
 
 .ex-12-button:hover .ex-12-top-white {
@@ -112,10 +117,10 @@
 }
 
 .ex-13-top-white {
-  animation: giro 2s linear;
+  animation: giro 2s linear infinite;
 }
 .ex-13-bottom-white {
-  animation: giro-2 2s linear;
+  animation: giro-2 2s linear infinite;
 }
 @keyframes giro {
   0% {top:-10px; left:10%;}
@@ -127,8 +132,8 @@
 }
 @keyframes giro-2 {
   0% {bottom:-10px; right:20%;}
-  20% {bottom:-10px; right:90%;}
-  40% {bottom:50px; right:90%;}
+  20% {bottom:-10px; right:80%;}
+  40% {bottom:50px; right:80%;}
   60% {bottom:50px; right:-5%;}
   80% {bottom:-10px; right:-5%;}
   100% {bottom:-10px; right:20%;}
