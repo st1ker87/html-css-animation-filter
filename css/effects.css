@@ -110,3 +110,26 @@
 .ex-12-button:hover .ex-12-bottom-white {
   right: 60%;
 }
+
+.ex-13-top-white {
+  animation: giro 2s linear;
+}
+.ex-13-bottom-white {
+  animation: giro-2 2s linear;
+}
+@keyframes giro {
+  0% {top:-10px; left:10%;}
+  20% {top:-10px; left:90%;}
+  40% {top:60px; left:90%;}
+  60% {top:60px; left:-5%;}
+  80% {top:-10px; left:-5%;}
+  100% {top:-10px; left:10%;}
+}
+@keyframes giro-2 {
+  0% {bottom:-10px; right:20%;}
+  20% {bottom:-10px; right:90%;}
+  40% {bottom:50px; right:90%;}
+  60% {bottom:50px; right:-5%;}
+  80% {bottom:-10px; right:-5%;}
+  100% {bottom:-10px; right:20%;}
+}
